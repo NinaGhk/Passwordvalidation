@@ -2,30 +2,49 @@ import java.util.Scanner;
 
 public class Passwort {
 
-    public static void main(String[] args) {
-        System.out.println(Passwort("hongk"));
-    }
 
-    public static String Passwort(String Passworts) {
-        int actuallengthPasswords = Passworts.length();
+    public static String Passwort5(String s) {
+        int actuallengthPasswords = Passwort.length();
 
         if (actuallengthPasswords < 4) {
-            return "the length for passwort too short";
+            return "the length for Passwort too short";
         } else if (actuallengthPasswords >= 5) {
-            return "the length for passwort very nice";
+            return "the length for Passwort very nice";
         } else {
             return "please try again";
         }
     }
 
-        public static boolean counts(String count){
-            char[] chars = count.toCharArray();
-            for(char c : chars){
-                if(Character.isDigit(c)){
-                    return true;
-                }
-            }  return false;
+    private static int length() {
+        return 3;
+    }
 
+    public static String Passwort10(String s) {
+        int actuallengthPasswords = Passwort.length();
+
+        if (actuallengthPasswords >11) {
+            return "the length for Passwort very nice";
+        } else if (actuallengthPasswords >= 10) {
+            return "the length for Passwort very nice";
+        } else {
+            return "please try again";
+        }
+
+        }
+
+    public static boolean counts(String count) {
+        char[] chars = count.toCharArray();
+        for (char c : chars) {
+            if (Character.isDigit(c)) {
+                return true;
             }
         }
+        return false;
+
+    }
+
+
+}
+
+
 
